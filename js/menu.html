@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maple & Bean Café - Menu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">☕ Maple & Bean</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Our Menu</h1>
+      <p class="lead">Fresh, local, and made with love every day.</p>
+    </div>
+  </section>
+
+  <!-- Filter Buttons -->
+  <section class="py-4 bg-light">
+    <div class="container text-center">
+      <button class="btn btn-warning me-2 mb-2 filter-btn active-filter" data-filter="all">All</button>
+      <button class="btn btn-outline-warning me-2 mb-2 filter-btn" data-filter="drinks">Drinks</button>
+      <button class="btn btn-outline-warning me-2 mb-2 filter-btn" data-filter="food">Food</button>
+      <button class="btn btn-outline-warning me-2 mb-2 filter-btn" data-filter="snacks">Snacks</button>
+    </div>
+  </section>
+
+  <!-- Menu Items -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row" id="menuGrid">
+
+        <!-- Drinks -->
+        <div class="col-md-4 mb-4 menu-item" data-category="drinks">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">☕ Kenyan AA Coffee</h5>
+              <p class="card-text">Single origin black coffee from Nyeri highlands. Bold, rich and smooth.</p>
+              <span class="badge bg-warning text-dark">Ksh 150</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 menu-item" data-category="drinks">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">🍵 Masala Chai</h5>
+              <p class="card-text">Spiced Kenyan tea brewed with ginger, cardamom, cinnamon and fresh milk.</p>
+              <span class="badge bg-warning text-dark">Ksh 100</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 menu-item" data-category="drinks">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">🥤 Avocado Smoothie</h5>
+              <p class="card-text">Fresh Kenyan avocado blended with milk, honey and a pinch of vanilla.</p>
+              <span class="badge bg-warning text-dark">Ksh 250</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 menu-item" data-category="drinks">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">🧃 Passion Juice</h5>
+              <p class="card-text">Freshly squeezed passion fruit juice. Served cold with or without sugar.</p>
+              <span class="badge bg-warning text-dark">Ksh 120</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food -->
+        <div class="col-md-4 mb-4 menu-item" data-category="food">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">🍳 Kenyan Breakfast Platter</h5>
+              <p class="card-text">Mandazi, eggs (fried or scrambled), sausage, and a cup of chai.</p>
+              <span class="badge bg-warning text-dark">Ksh 450</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 menu-item" data-category="food">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">🫓 Mutura Sandwich</h5>
+              <p class="card-text">Grilled mutura slices in a toasted roll with kachumbari and chilli sauce.</p>
+              <span class="badge bg-warning text-dark">Ksh 300</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 menu-item" data-category="food">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">🍛 Pilau Bowl</h5>
+              <p class="card-text">Fragrant Kenyan pilau rice served with kachumbari and a side of stew.</p>
+              <span class="badge bg-warning text-dark">Ksh 400</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 menu-item" data-category="food">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">🥗 Githeri Salad Bowl</h5>
+              <p class="card-text">A modern twist on githeri — mixed beans and maize with fresh veggies and vinaigrette.</p>
+              <span class="badge bg-warning text-dark">Ksh 350</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snacks -->
+        <div class="col-md-4 mb-4 menu-item" data-category="snacks">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">🍩 Mandazi (3 pcs)</h5>
+              <p class="card-text">Classic Kenyan mandazi, lightly sweet and fried fresh every morning.</p>
+              <span class="badge bg-warning text-dark">Ksh 80</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 menu-item" data-category="snacks">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">🥜 Groundnut Cake</h5>
+              <p class="card-text">Traditional Kenyan groundnut brittle. Crunchy, sweet and very addictive.</p>
+              <span class="badge bg-warning text-dark">Ksh 50</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 menu-item" data-category="snacks">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">🍌 Maandazi ya Ndizi</h5>
+              <p class="card-text">Banana mandazi — soft, fragrant and best enjoyed with masala chai.</p>
+              <span class="badge bg-warning text-dark">Ksh 100</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 menu-item" data-category="snacks">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">🌽 Roasted Maize</h5>
+              <p class="card-text">Char-grilled sweet maize rubbed with lemon and chilli. A Nairobi street classic.</p>
+              <span class="badge bg-warning text-dark">Ksh 60</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-1">☕ Maple & Bean Café — Westlands, Nairobi</p>
+      <p
+      
