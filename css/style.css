@@ -103,4 +103,15 @@ body.dark-mode .accordion-item {
 body.dark-mode .accordion-button {
   background-color: #333;
   color: #f0f0f0;
+  /* ===== GALLERY HOVER EFFECT ===== */
+.gallery-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
 }
