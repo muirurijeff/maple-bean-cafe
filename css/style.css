@@ -4,6 +4,11 @@ body {
   color: #333;
 }
 
+/* ===== SMOOTH SCROLL ===== */
+html {
+  scroll-behavior: smooth;
+}
+
 /* ===== NAVBAR ===== */
 .navbar-brand {
   font-size: 1.5rem;
@@ -13,6 +18,12 @@ body {
 
 .nav-link:hover {
   color: #f0c040 !important;
+}
+
+/* ===== ACTIVE NAV LINK ===== */
+.nav-link.active {
+  color: #f0c040 !important;
+  font-weight: bold;
 }
 
 /* ===== HERO SECTION ===== */
@@ -63,4 +74,33 @@ footer {
   background-color: #f0c040;
   color: #333;
   font-weight: bold;
+}
+
+/* ===== DARK MODE ===== */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+body.dark-mode .card {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+}
+
+body.dark-mode .bg-light {
+  background-color: #2a2a2a !important;
+}
+
+body.dark-mode footer {
+  background-color: #111 !important;
+}
+
+body.dark-mode .accordion-item {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+}
+
+body.dark-mode .accordion-button {
+  background-color: #333;
+  color: #f0f0f0;
 }
