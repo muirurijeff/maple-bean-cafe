@@ -64,6 +64,13 @@ html {
   object-fit: cover;
 }
 
+.gallery-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
 /* ===== FOOTER ===== */
 footer {
   font-size: 0.9rem;
