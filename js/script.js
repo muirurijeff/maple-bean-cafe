@@ -1,3 +1,17 @@
+// ===== PAGE LOADER =====
+window.addEventListener('load', function () {
+  const loader = document.getElementById('page-loader');
+  if (loader) {
+    document.body.classList.remove('loading');
+    loader.classList.add('hidden');
+    setTimeout(function () {
+      loader.remove();
+    }, 400);
+  }
+});
+
+document.body.classList.add('loading');
+
 // ===== CONTACT FORM VALIDATION =====
 const contactForm = document.getElementById('contactForm');
 
