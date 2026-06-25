@@ -124,6 +124,11 @@ html {
   font-weight: bold;
 }
 
+/* ===== BUTTONS ===== */
+.btn {
+  border-radius: 999px;
+}
+
 /* ===== GALLERY IMAGES ===== */
 .img-fluid {
   width: 100%;
