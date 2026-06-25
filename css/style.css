@@ -71,6 +71,10 @@ html {
 }
 
 /* ===== NAVBAR ===== */
+.navbar {
+  border-bottom: 3px solid #f0c040;
+}
+
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
@@ -85,6 +89,8 @@ html {
 .nav-link.active {
   color: #f0c040 !important;
   font-weight: bold;
+  border-bottom: 2px solid #f0c040;
+  padding-bottom: 4px;
 }
 
 /* ===== HERO SECTION ===== */
