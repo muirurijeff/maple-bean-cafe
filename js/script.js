@@ -77,6 +77,26 @@ filterButtons.forEach(function(button) {
   });
 });
 
+// ===== WELCOME MESSAGE BY TIME OF DAY =====
+document.addEventListener('DOMContentLoaded', function () {
+  const greetingEl = document.getElementById('timeGreeting');
+
+  if (greetingEl) {
+    const hour = new Date().getHours();
+    let message = 'Good day — we’re brewing fresh coffee just for you.';
+
+    if (hour < 12) {
+      message = 'Good morning — we’re brewing fresh coffee just for you.';
+    } else if (hour < 17) {
+      message = 'Good afternoon — we’re brewing fresh coffee just for you.';
+    } else {
+      message = 'Good evening — we’re brewing fresh coffee just for you.';
+    }
+
+    greetingEl.textContent = message;
+  }
+});
+
 // ===== DARK MODE TOGGLE =====
 function toggleDarkMode() {
   document.body.classList.toggle('dark-mode');
