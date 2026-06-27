@@ -65,26 +65,28 @@ if (contactForm) {
 }
 
 // ===== MENU FILTER =====
-const filterButtons = document.querySelectorAll('.filter-btn');
+document.addEventListener('DOMContentLoaded', function() {
+  const filterButtons = document.querySelectorAll('.filter-btn');
 
-filterButtons.forEach(function(button) {
-  button.addEventListener('click', function() {
-    filterButtons.forEach(btn => {
-      btn.classList.remove('active-filter', 'btn-warning');
-      btn.classList.add('btn-outline-warning');
-    });
-    this.classList.add('active-filter', 'btn-warning');
-    this.classList.remove('btn-outline-warning');
+  filterButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      filterButtons.forEach(btn => {
+        btn.classList.remove('active-filter', 'btn-warning');
+        btn.classList.add('btn-outline-warning');
+      });
+      this.classList.add('active-filter', 'btn-warning');
+      this.classList.remove('btn-outline-warning');
 
-    const filter = this.getAttribute('data-filter');
-    const items = document.querySelectorAll('.menu-item');
+      const filter = this.getAttribute('data-filter');
+      const items = document.querySelectorAll('.menu-item');
 
-    items.forEach(function(item) {
-      if (filter === 'all' || item.getAttribute('data-category') === filter) {
-        item.style.display = 'block';
-      } else {
-        item.style.display = 'none';
-      }
+      items.forEach(function(item) {
+        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
     });
   });
 });
