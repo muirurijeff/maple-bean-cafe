@@ -10,8 +10,6 @@ window.addEventListener('load', function () {
   }
 });
 
-document.body.classList.add('loading');
-
 // ===== CONTACT FORM VALIDATION =====
 const contactForm = document.getElementById('contactForm');
 

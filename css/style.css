@@ -4,10 +4,6 @@ body {
   color: #333;
 }
 
-body.loading {
-  overflow: hidden;
-}
-
 .page-loader {
   position: fixed;
   inset: 0;
