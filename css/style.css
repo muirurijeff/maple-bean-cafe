@@ -178,7 +178,9 @@ body.dark-mode .accordion-item {
 body.dark-mode .accordion-button {
   background-color: #333;
   color: #f0f0f0;
-  /* ===== GALLERY HOVER EFFECT ===== */
+}
+
+/* ===== GALLERY HOVER EFFECT ===== */
 .gallery-img {
   width: 100%;
   height: 220px;
@@ -189,7 +191,9 @@ body.dark-mode .accordion-button {
 
 .gallery-img:hover {
   transform: scale(1.05);
-  /* ===== TESTIMONIAL AVATAR ===== */
+}
+
+/* ===== TESTIMONIAL AVATAR ===== */
 .testimonial-avatar {
   width: 50px !important;
   height: 50px !important;
@@ -201,4 +205,28 @@ body.dark-mode .accordion-button {
   align-items: center !important;
   justify-content: center !important;
   font-size: 1rem !important;
+}
+
+/* ===== POPULAR ITEMS ===== */
+.popular-item-card {
+  overflow: hidden;
+}
+.popular-item-card .card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+.popular-item-card .card-body {
+  padding: 1.5rem;
+}
+.popular-item-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #b76e03;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+  .popular-item-card .card-img-top {
+    height: 200px;
+  }
 }
